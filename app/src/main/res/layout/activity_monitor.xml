@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MonitorActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="登录"
+        app:subtitle="@string/app_name"
+        app:navigationIcon="@mipmap/icon_black"
+        android:theme="@style/AppToobarTitleTheme"
+        app:popupTheme="@style/AppToobarPopupTheme"
+        android:background="@color/colorToolBar">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/monitor_bg">
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="428dp"
+                android:layout_height="260dp"
+                android:layout_margin="6dp"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:background="#aa898989"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="请打开监控！"/>
+
+            <TextureView
+                android:id="@+id/svCamera"
+                android:layout_width="428dp"
+                android:layout_height="260dp"
+                android:layout_margin="6dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llBackGround"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#bc004fcc"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_direction">
+
+                <ImageButton
+                    android:id="@+id/ibTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/btn_security_top" />
+
+                <ImageButton
+                    android:id="@+id/ibLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:background="@drawable/btn_security_left" />
+
+                <ImageButton
+                    android:id="@+id/ibRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/btn_security_right" />
+
+                <ImageButton
+                    android:id="@+id/ibBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="11dp"
+                    android:background="@drawable/btn_security_buttom" />
+
+                <ImageButton
+                    android:id="@+id/ibStop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/ibLeft"
+                    android:layout_below="@id/ibTop"
+                    android:layout_above="@id/ibBottom"
+                    android:layout_toLeftOf="@id/ibRight"
+                    android:background="@drawable/btn_cecurity_stop"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cbOpenOrClose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_text_green_fillet"
+                        android:button="@null"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/check_video"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="监控"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/ivGetImg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_text_bright_blue_fillet"
+                        android:button="@null"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/ico_camera"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="拍照"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

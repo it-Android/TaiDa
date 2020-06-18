@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@mipmap/abnormal_40" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_39" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_38" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_37" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_36" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_35" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_34" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_33" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_32" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_31" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_30" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_29" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_28" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_27" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_26" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_25" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_24" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_23" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_22" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_21" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_20" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_19" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_18" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_17" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_16" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_15" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_14" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_13" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_12" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_11" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_10" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_9" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_8" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_7" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_6" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_5" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_4" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_3" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_2" android:duration="100"/>
+    <item android:drawable="@mipmap/abnormal_1" android:duration="100"/>
+</animation-list>

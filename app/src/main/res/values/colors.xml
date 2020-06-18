@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorCirclebg">#100000ff</color>
+    <color name="colorStart">#a5a7ff</color>
+    <color name="colorEnd">#0006ff</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorToolBar">#536dfe</color>
+    <color name="colorHistoryOn">#B110B1AF</color>
+    <color name="colorHistoryOff">#b105e4e1</color>
+</resources>

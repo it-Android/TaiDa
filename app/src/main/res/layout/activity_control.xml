@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.ControlActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="工厂监控"
+        app:subtitle="@string/app_name"
+        app:navigationIcon="@mipmap/icon_setup"
+        android:theme="@style/AppToobarTitleTheme"
+        app:popupTheme="@style/AppToobarPopupTheme"
+        android:background="@color/colorToolBar">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/control_DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/control_bg">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout>
+                            <com.arcsoft.arcfacedemo.MyView.MonitorView
+                                android:id="@+id/fun_adm_imageView"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/normal_animation_01"
+                                android:layout_centerInParent="true"
+                                app:MOcontentText="无明火！"
+                                app:MOcontentTextColor="#fcff00"
+                                app:MOcontentTextSize="2.5dp"
+                                app:MOtitleText="火焰监控"
+                                app:MOtitleTextColor="#ffffff"
+                                app:MOtitleTextSize="3.5dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout>
+                            <com.arcsoft.arcfacedemo.MyView.MonitorView
+                                android:id="@+id/control_mvSmoke"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/normal_animation_01"
+                                android:layout_centerInParent="true"
+                                app:MOcontentText="无烟雾异常！"
+                                app:MOcontentTextColor="#fcff00"
+                                app:MOcontentTextSize="2.5dp"
+                                app:MOtitleText="烟雾监控"
+                                app:MOtitleTextColor="#ffffff"
+                                app:MOtitleTextSize="3.5dp" />
+                        </RelativeLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/control_fan_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="风扇转速：1"
+                                android:textColor="#a2ff00" />
+
+                            <ImageView
+                                android:id="@+id/control_ivFan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_below="@id/control_fan_text"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/animation_fan_1" />
+
+                        </RelativeLayout>
+
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+<!--                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/control_lampTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:text="灯光监控："
+                                android:textColor="#fff700" />
+
+                            <CheckBox
+                                android:id="@+id/control_cbLamp"
+                                android:layout_width="60dp"
+                                android:layout_height="25dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/check_bg_switch"
+                                android:button="@null" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#fff700"
+                                android:layout_above="@id/control_cbLamp"
+                                android:text="智能控制："/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:text="保安室:"
+                                        android:textColor="#fff700" />
+
+                                    <CheckBox
+                                        android:id="@+id/control_cbSecurity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/check_bg_switch"
+                                        android:button="@null" />
+                                </TableRow>
+
+                                <TableRow android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:text="车间:"
+                                        android:textColor="#fff700" />
+
+                                    <CheckBox
+                                        android:id="@+id/control_cbWorkshop"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/check_bg_switch"
+                                        android:button="@null" />
+                                </TableRow>
+                            </TableLayout>
+
+                        </LinearLayout>-->
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </ScrollView>
+
+            <!--数据显示-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/control_lcTemperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_margin="10dp">
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/control_lcHumidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_margin="10dp">
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/control_lcCarbonDioxide"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_margin="10dp">
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/control_lcNoise"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_margin="10dp">
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+        <!--侧划菜单-->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#8fffff"
+            android:overScrollMode="never"
+            android:paddingRight="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/control_btnHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="历史监控" />
+
+                <Button
+                    android:id="@+id/control_btnThreshold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阈值控制" />
+
+                <Button
+                    android:id="@+id/control_btnMonitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车间监控" />
+
+                <Button
+                    android:id="@+id/control_btnFaceAttendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人脸考勤" />
+
+                <Button
+                    android:id="@+id/control_btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人脸注册" />
+
+                <Button
+                    android:id="@+id/control_btnEmployeeInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="员工信息" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CirclePercentBar">
+        <attr name="arcColor" format="color"/>
+        <!--是否开启双向，默认否，正数为顺时针向，负数为反向-->
+        <attr name="twoWay" format="boolean"/>
+
+        <attr name="suffix" format="string"/>
+        <!--外圆环的大小-->
+        <attr name="arcWidth" format="dimension"/>
+        <!--内圆的颜色-->
+        <attr name="innerCircleColor" format="color"/>
+        <!--数据的颜色-->
+        <attr name="centerTextColor" format="color"/>
+        <!--数据-->
+        <attr name="centerTextSize" format="dimension"/>
+        <!--标题字体-->
+        <attr name="titleText" format="string"/>
+        <!--标题字体颜色-->
+        <attr name="titleTextColor" format="color"/>
+        <!--标题字体大小-->
+        <attr name="titleTextSize" format="dimension"/>
+        <!--圆的半径-->
+        <attr name="circleRadius" format="dimension"/>
+        <!--起始颜色-->
+        <attr name="arcStartColor" format="color"/>
+        <!--反向起始颜色-->
+        <attr name="arcStartColorReverse" format="color"/>
+        <!--末尾颜色 不开启twoWay该属性无效-->
+        <attr name="arcEndColor" format="color"/>
+        <!--反向末尾颜色 不开启twoWay该属性无效-->
+        <attr name="arcEndColorReverse" format="color"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MonitorView">
+
+        <attr name="MOtitleText" format="string"></attr>
+        <attr name="MOtitleTextColor" format="color"></attr>
+        <attr name="MOtitleTextSize" format="dimension"></attr>
+
+        <attr name="MOcontentText" format="string"></attr>
+        <attr name="MOcontentTextColor" format="color"></attr>
+        <attr name="MOcontentTextSize" format="dimension"></attr>
+
+    </declare-styleable>
+
+</resources>

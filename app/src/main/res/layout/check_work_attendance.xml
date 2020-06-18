@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/shading_bg"
+    android:orientation="vertical">
+
+    <!--考勤查看-->
+   <TextView
+       android:id="@+id/informationDate"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#000"
+       android:textSize="18sp"
+       android:text="日期"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2">
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/attendance_content_text_display"
+                android:text="时间"/>
+            <TextView
+                style="@style/attendance_content_text_display"
+                android:text="上班考勤"/>
+
+            <TextView
+                style="@style/attendance_content_text_display"
+                android:text="下班考勤" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/attendance_content_text_display"
+                android:text="上午"/>
+            <TextView
+                android:id="@+id/morningGoToWork"
+                style="@style/attendance_content_text_display"
+                android:text="时间"/>
+            <TextView
+                android:id="@+id/morningGoOffWork"
+                style="@style/attendance_content_text_display"
+                android:text="时间"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/attendance_content_text_display"
+                android:text="下午"/>
+            <TextView
+                android:id="@+id/afternoonGoToWork"
+                style="@style/attendance_content_text_display"
+                android:text="时间"/>
+            <TextView
+                android:id="@+id/afternoonGoOffWork"
+                style="@style/attendance_content_text_display"
+                android:text="时间"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/attendance_content_text_display"
+                android:text="晚上"/>
+            <TextView
+                android:id="@+id/nightGoToWork"
+                style="@style/attendance_content_text_display"
+                android:text="时间"/>
+            <TextView
+                android:id="@+id/nightGoOffWork"
+                style="@style/attendance_content_text_display"
+                android:text="时间"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

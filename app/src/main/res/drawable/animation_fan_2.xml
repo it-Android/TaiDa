@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/fan_1" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_2" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_3" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_4" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_5" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_6" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_7" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_8" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_9" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_10" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_11" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_12" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_13" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_14" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_15" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_16" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_17" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_18" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_19" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_20" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_21" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_22" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_23" android:duration="40"/>
+    <item android:drawable="@mipmap/fan_24" android:duration="40"/>
+</animation-list>

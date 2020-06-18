@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AdministratorsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolBar"
+        android:theme="@style/AppToobarTitleTheme"
+        app:navigationIcon="@mipmap/icon_black"
+        app:popupTheme="@style/AppToobarPopupTheme"
+        app:subtitle="@string/app_name"
+        app:title="员工管理"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:background="@mipmap/control_bg"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/admin_tv_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份：管理员"/>
+
+            <TextView
+                android:id="@+id/admin_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号：12345678910"/>
+            <ImageView
+                android:id="@+id/admin_iv_head"
+                android:layout_width="150dp"
+                android:scaleType="fitXY"
+                android:layout_height="210dp"
+                android:padding="3dp"
+                android:background="#aaa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shading_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="员工信息：" />
+
+            <ListView
+                android:id="@+id/admin_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:dividerHeight="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#44c9ffe0">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

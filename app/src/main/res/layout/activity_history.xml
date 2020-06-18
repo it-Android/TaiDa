@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/history_bg"
+    tools:context=".activity.HistoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@color/colorToolBar"
+        android:theme="@style/AppToobarTitleTheme"
+        app:navigationIcon="@mipmap/icon_black"
+        app:popupTheme="@style/AppToobarPopupTheme"
+        app:subtitle="@string/app_name"
+        app:title="历史">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TableLayout
+        android:id="@+id/history_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_toolbar"
+        android:stretchColumns="0,1,2,3">
+        <RadioGroup
+            android:id="@+id/history_rgContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/history_Temperature"
+                style="@style/history_radio"
+                android:checked="true"
+                android:text="温度"/>
+            <RadioButton
+                android:id="@+id/history_Humidity"
+                style="@style/history_radio"
+                android:gravity="center"
+                android:text="湿度"/>
+            <RadioButton
+                android:id="@+id/history_CarbonDioxide"
+                style="@style/history_radio"
+                android:gravity="center"
+                android:text="二氧化碳"/>
+            <RadioButton
+                android:id="@+id/history_Noise"
+                style="@style/history_radio"
+                android:gravity="center"
+                android:text="光照"/>
+        </RadioGroup>
+    </TableLayout>
+
+    <com.arcsoft.arcfacedemo.MyView.ViewPagerSlide
+        android:id="@+id/history_vpContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/history_tl">
+    </com.arcsoft.arcfacedemo.MyView.ViewPagerSlide>
+
+
+</RelativeLayout>
